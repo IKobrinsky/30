@@ -18,11 +18,6 @@ function dbConnect()
     return $db;
 }
 
-function appendFile(string $fileName, array $strings)
-{
-    $file=fopen($fileName,'a+') or die("Unable to open file!");
-    fwrite($file, implode(PHP_EOL, $strings));
-    fclose($file);
-}
+
 
 ?>
